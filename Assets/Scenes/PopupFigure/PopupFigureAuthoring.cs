@@ -1,5 +1,7 @@
+using Arsenal;
 using Unity.Entities;
 using Unity.Mathematics;
+using Unity.Transforms;
 using UnityEngine;
 
 public struct PopupFigure : IComponentData
@@ -42,9 +44,12 @@ public partial struct FigureSpawn : ISystem
 
         var popupFigureEntity = SystemAPI.GetSingletonEntity<PopupFigure>();
         var popupFigure = state.EntityManager.GetComponentData<PopupFigure>(popupFigureEntity);
-        var entity = state.EntityManager.Instantiate(popupFigure.Prefab);
 
-        SystemAPI.GetComponentRW<Figure>(entity).ValueRW.Value = m_Random.NextInt(0, 99);
-        SystemAPI.GetComponentRW<FigurePopupState>(entity).ValueRW.Origin = new float3(m_Random.NextFloat(-170, 170), m_Random.NextFloat(-426, 380), 0);
+        for (int i = 0; i < 4; i++)
+        {
+            var entity = state.EntityManager.Instantiate(popupFigure.Prefab);
+            SystemAPI.GetComponentRW<Figure>(entity).ValueRW.Value = m_Random.NextInt(0, 99);
+            SystemAPI.GetComponentRW<LocalTransform>(entity).ValueRW.Position = new float3(m_Random.NextFloat(-170, 170), m_Random.NextFloat(-426, 380), 0);
+        }
     }
 }
