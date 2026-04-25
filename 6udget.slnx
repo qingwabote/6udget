@@ -1,7 +1,0 @@
-﻿<Solution>
-  <Project Path="Bastard.csproj" />
-  <Project Path="Graphix.csproj" />
-  <Project Path="Graphix.Editor.csproj" />
-  <Project Path="Arsenal.csproj" />
-  <Project Path="Assembly-CSharp.csproj" />
-</Solution>

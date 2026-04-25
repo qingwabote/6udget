@@ -573,6 +573,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 48332287}
     m_Modifications:
     - target: {fileID: 129829764462142616, guid: 22ef14d2bb364d548af025077281ad43, type: 3}
+      propertyPath: m_fontSize
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 129829764462142616, guid: 22ef14d2bb364d548af025077281ad43, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 129829764462142616, guid: 22ef14d2bb364d548af025077281ad43, type: 3}
       propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
       value: 1801810542
       objectReference: {fileID: 0}
