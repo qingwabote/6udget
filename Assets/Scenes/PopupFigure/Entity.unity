@@ -164,7 +164,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NumberPopupAuthoring
   Prefab: {fileID: 9156390310701602080, guid: cef901c17c3c52d46a3fbe30281f4c03, type: 3}
-  Num: 256
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
